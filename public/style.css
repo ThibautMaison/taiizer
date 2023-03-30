@@ -1,0 +1,68 @@
+.btn {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+}
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* pour la compatibilité avec Safari */
+}
+
+  .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.6);
+}
+.card {
+    transition: all 0.4s ease-in-out;
+    border: 1px solid transparent;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* déplace la carte vers le haut */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    border-color: white;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+  }
+  
+  .card:hover .card-img-top img {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .product-list a:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .nav-item:hover:after {
+    width: 100%;
+  }
+  
+  .nav-link {
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-5px);
+  }
+  .mask {
+    height: 100%;
+  }
